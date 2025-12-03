@@ -1,0 +1,91 @@
+
+/* Basic body setup with transition */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  transition: background-color 0.5s ease, color 0.5s ease;
+  min-height: 100vh;
+}
+
+/* Container */
+.container {
+  text-align: center;
+  padding-top: 100px;
+  min-height: 100vh;
+}
+
+/* Buttons */
+button {
+  padding: 10px 20px;
+  font-size: 16px;
+  margin-top: 20px;
+  margin-right: 10px;
+  background-color: #0077cc;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+  background-color: #005fa3;
+  transform: scale(1.05);
+}
+
+/* Light Theme */
+.light-mode {
+  background-color: #f5f5f5;
+  color: #222;
+}
+
+/* Dark Theme */
+.dark-mode {
+  background-color: #121212;
+  color: #f1f1f1;
+}
+
+/* Background for effect */
+.active-background {
+  background-color: #121212;
+  color: white;
+}
+
+/* Dark mode active background */
+
+
+/* Animation */
+.zoom-in {
+  animation: zoomIn 0.5s forwards;
+}
+
+@keyframes zoomIn {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1.2);
+    color: #667eea;
+  }
+}
+
+/* Dark mode zoom animation */
+.dark-mode .zoom-in {
+  animation: zoomInDark 0.5s forwards;
+}
+
+@keyframes zoomInDark {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1.2);
+    color: #11998e;
+  }
+}
+
+/* Optional heading transition */
+h1 {
+  transition: transform 0.5s ease, color 0.3s ease;
+}
